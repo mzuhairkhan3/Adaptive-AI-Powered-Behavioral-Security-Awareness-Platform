@@ -28,19 +28,6 @@ Built as part of an Offensive Security & Pentesting internship project.
 - TypeScript
 - Tailwind CSS
 
-## Project Structure
-├── main.py
-├── models.py
-├── schemas.py
-├── database.py
-├── ai_engine.py
-├── requirements.txt
-├── src/                  # Frontend source code
-├── package.json
-├── README.md
-└── .gitignore
-text## How to Run
-
 ### Backend
 
 1. Install dependencies:
@@ -66,6 +53,6 @@ Start the development server:
 
 Bashnpm run dev
 Frontend will run at: http://localhost:3000
-API Endpoints
-MethodEndpointDescriptionPOST/users/Create a new userGET/users/Get all usersDELETE/users/{id}Delete a userPOST/campaigns/Create a new campaignGET/campaigns/Get all campaignsDELETE/campaigns/{id}Delete a campaignPOST/generate-phishing/Generate phishing emailPOST/update-risk/Update user risk score
+
+
 
