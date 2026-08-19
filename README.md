@@ -40,14 +40,14 @@ textGOOGLE_API_KEY=your_api_key_here
 
 Start the server:
 
-Bashuvicorn main:app --reload
+uvicorn main:app --reload
 Backend will run at: http://127.0.0.1:8000
 API Docs: http://127.0.0.1:8000/docs
 Frontend
 
 Install dependencies:
 
-Bashnpm install
+npm install
 
 Start the development server:
 
