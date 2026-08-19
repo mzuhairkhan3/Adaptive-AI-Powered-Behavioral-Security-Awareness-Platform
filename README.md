@@ -1,22 +1,171 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adaptive AI-Powered Behavioral Security Awareness Platform
 
-## Getting Started
+A prototype security awareness platform that uses generative AI to create personalized phishing simulation emails and tracks employee behavioral risk scores.
 
-First, run the development server:
+Built as part of an Offensive Security & Pentesting internship project.
 
+## Features
+
+- AI-powered personalized phishing email generation (Google Gemini)
+- User management (Create, View, Delete)
+- Campaign management (Create, View, Delete)
+- Behavioral risk scoring system
+- Admin dashboard with live statistics
+- Modern web interface
+
+## Tech Stack
+
+**Backend**
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- LangChain + Google Gemini
+
+**Frontend**
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+## Project Structure
+├── main.py
+├── models.py
+├── schemas.py
+├── database.py
+├── ai_engine.py
+├── requirements.txt
+├── src/                  # Frontend source code
+├── package.json
+├── README.md
+└── .gitignore
+text## How to Run
+
+### Backend
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+pip install -r requirements.txt
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a .env file and add your Google Gemini API key:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+textGOOGLE_API_KEY=your_api_key_here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start the server:
+
+Bashuvicorn main:app --reload
+Backend will run at: http://127.0.0.1:8000
+API Docs: http://127.0.0.1:8000/docs
+Frontend
+
+Install dependencies:
+
+Bashnpm install
+
+Start the development server:
+
+Bashnpm run dev
+Frontend will run at: http://localhost:3000
+API Endpoints
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MethodEndpointDescriptionPOST/users/Create a new userGET/users/Get all usersDELETE/users/{id}Delete a userPOST/campaigns/Create a new campaignGET/campaigns/Get all campaignsDELETE/campaigns/{id}Delete a campaignPOST/generate-phishing/Generate phishing emailPOST/update-risk/Update user risk score
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MethodEndpointDescriptionPOST/users/Create a new userGET/users/Get all usersDELETE/users/{id}Delete a userPOST/campaigns/Create a new campaignGET/campaigns/Get all campaignsDELETE/campaigns/{id}Delete a campaignPOST/generate-phishing/Generate phishing emailPOST/update-risk/Update user risk score
 
